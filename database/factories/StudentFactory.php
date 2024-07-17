@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Student;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -24,7 +25,7 @@ class StudentFactory extends Factory
             'address' => fake()->address(),
             'city' => fake()->city(),
             'province' => fake()->state(),
-            'zip' => fake()->postalcode(),
+            'zip' => fake()->postalCode(),
             'birthdate' => fake()->dataTImeBetween('2000-01-01', '2010-12-30')->format('Y-m-d'),
         ];
     }
